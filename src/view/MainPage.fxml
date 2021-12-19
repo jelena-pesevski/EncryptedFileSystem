@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="592.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainPageController">
+   <children>
+      <TreeView fx:id="efsTree" layoutX="26.0" layoutY="27.0" onContextMenuRequested="#mouseClick" onMouseClicked="#mouseClick" prefHeight="519.0" prefWidth="425.0" />
+      <Button fx:id="addFileButton" layoutX="491.0" layoutY="33.0" mnemonicParsing="false" onAction="#addTxtFile" prefHeight="35.0" prefWidth="180.0" text="Add txt file" />
+      <Button fx:id="directoryAddButton" layoutX="491.0" layoutY="88.0" mnemonicParsing="false" onAction="#addDirectory" prefHeight="35.0" prefWidth="180.0" text="Add directory" />
+      <Button fx:id="uploadButton" layoutX="491.0" layoutY="318.0" mnemonicParsing="false" onAction="#uploadAFile" prefHeight="35.0" prefWidth="180.0" text="Upload " />
+      <Button fx:id="downloadButton" layoutX="491.0" layoutY="371.0" mnemonicParsing="false" onAction="#downloadAFile" prefHeight="35.0" prefWidth="180.0" text="Download " />
+      <Button fx:id="changeContentButton" layoutX="491.0" layoutY="146.0" mnemonicParsing="false" onAction="#changeContent" prefHeight="35.0" prefWidth="180.0" text="Change content of a txt file" />
+      <Button fx:id="deleteButton" layoutX="491.0" layoutY="204.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="180.0" text="Delete " />
+      <Button fx:id="sharedDirButton" layoutX="491.0" layoutY="486.0" mnemonicParsing="false" onAction="#showShared" prefHeight="35.0" prefWidth="180.0" text="Shared directory" />
+      <Button fx:id="openButton" layoutX="491.0" layoutY="261.0" mnemonicParsing="false" onAction="#open" prefHeight="35.0" prefWidth="180.0" text="Open" />
+      <Button fx:id="sendButton" layoutX="491.0" layoutY="429.0" mnemonicParsing="false" onAction="#sendFile" prefHeight="32.0" prefWidth="180.0" text="Send file" />
+      <Button fx:id="logOutButton" layoutX="592.0" layoutY="540.0" mnemonicParsing="false" onAction="#logOut" prefHeight="32.0" prefWidth="76.0" text="Log out" />
+   </children>
+</AnchorPane>
